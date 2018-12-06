@@ -12,10 +12,15 @@ public class GravityPerLevel : MonoBehaviour
         // Den ändrar stringen LevelGravity till namnet på leveln du är på
         LevelGravity = (SceneManager.GetActiveScene().name);
         // Kollar vad Levelgravity har för värde
+        if (LevelGravity == "Level_0")
+        {
+            // Om värdet är Level_0 och isåfall sätter den gravitationen till 5
+            GetComponent<Rigidbody2D>().gravityScale = 5;
+        }
         if (LevelGravity == "Level_1")
         {
             // Om värdet är Level_1 och isåfall sätter den gravitationen till 4
-            GetComponent<Rigidbody2D>().gravityScale = 4;
+            GetComponent<Rigidbody2D>().gravityScale = 3;
         }
         if (LevelGravity == "Level_2")
         {
@@ -33,11 +38,5 @@ public class GravityPerLevel : MonoBehaviour
             // Om värdet är något annat så sätter den gravitationen till 2
             GetComponent<Rigidbody2D>().gravityScale = 2;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }

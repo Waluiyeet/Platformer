@@ -12,12 +12,11 @@ public class GodMode : MonoBehaviour
     void Update()
     {
         //kollar om man trycker ner Backspace
-        if (Input.GetKeyDown(KeyCode.Backspace)) 
+        if ((Input.GetKeyDown(KeyCode.KeypadEnter)) && (Input.GetKeyDown(KeyCode.Backspace)))
         {
             //Sätter God till motsaten av vad det är
-            God = !God; 
+            God = !God;
         }
-
         if (God == true)
         {
             //ändrar tagen till Ground

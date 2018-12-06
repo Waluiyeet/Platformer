@@ -9,10 +9,13 @@ public class Victory_royal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player") // Om objektet koliderar med ett objekt som har taggen player 
+            // Om objektet koliderar med ett objekt som har taggen player 
+        if (collision.tag == "Player") 
         {
-            SceneManager.LoadScene(levelToLoad); // Så laddar den in leveln den ska ladda in
-            print("you won wow"); // Och skriver "you won wow" i consollen
+            // Så laddar den in leveln den ska ladda in
+            SceneManager.LoadScene(levelToLoad); 
+            // Och skriver "you won wow" i consollen
+            print("you won wow"); 
         }
     }
 }

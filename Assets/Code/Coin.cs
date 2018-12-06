@@ -9,6 +9,7 @@ public class Coin : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Kollar om det objektet koliderar med har taggen Player
         if (collision.tag == "Player")
         {
             //skapar en temporär variabel "controller" och sätt den till resultatet av sökningen efter sökningen efter objektet med taggen "GameController"
@@ -28,6 +29,7 @@ public class Coin : MonoBehaviour
             }
             else
             {
+                // Om inte sakerna inanför ifen existeras görs detta
                 Debug.LogError("Gamecontroller finns inte");
             }
         }

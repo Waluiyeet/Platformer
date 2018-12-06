@@ -121,7 +121,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1436162799505884}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.88, y: 13.19, z: 0}
+  m_LocalPosition: {x: -5.2973366, y: -0.57208455, z: 0}
   m_LocalScale: {x: 0.68823826, y: 0.5886524, z: 1}
   m_Children:
   - {fileID: 4339947562688252}
@@ -230,7 +230,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.3}
+  m_Offset: {x: 0, y: -0.6153274}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -241,7 +241,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.1}
+  m_Size: {x: 1, y: 1.469345}
   m_EdgeRadius: 0
 --- !u!61 &61889888603767838
 BoxCollider2D:
@@ -439,7 +439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d8e13041e1cb741977d319c896acc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumphight: 16
+  jumphight: 8
   God: 0
 --- !u!114 &114993199798212336
 MonoBehaviour:
@@ -455,8 +455,9 @@ MonoBehaviour:
   moveSpeed: 4.5
   GroundedCheck: {fileID: 114229616883840302}
   Godmode: {fileID: 114736731932593494}
-  jumphight: 16
+  jumphight: 4
   dead: 0
+  JumpDubble: 8
 --- !u!212 &212598490515309230
 SpriteRenderer:
   m_ObjectHideFlags: 1
